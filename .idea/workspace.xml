@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3862ed58-bb05-40ce-8d1f-1541e40f1022" name="Changes" comment="Created new project, Assignment 3 for 159234" />
+    <list default="true" id="3862ed58-bb05-40ce-8d1f-1541e40f1022" name="Changes" comment="Added the text file that I will need to use in my program.">
+      <change afterPath="$PROJECT_DIR$/src/DatabaseFileReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DesktopPC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Device.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Laptop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tablet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -48,11 +63,19 @@
       <option name="project" value="LOCAL" />
       <updated>1683861764101</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added the text file that I will need to use in my program.">
+      <created>1683862033867</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683862033867</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created new project, Assignment 3 for 159234" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created new project, Assignment 3 for 159234" />
+    <MESSAGE value="Added the text file that I will need to use in my program." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the text file that I will need to use in my program." />
   </component>
 </project>
