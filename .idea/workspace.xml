@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3862ed58-bb05-40ce-8d1f-1541e40f1022" name="Changes" comment="Added the text file that I will need to use in my program.">
-      <change afterPath="$PROJECT_DIR$/src/DatabaseFileReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DesktopPC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Device.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Laptop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tablet.java" afterDir="false" />
+    <list default="true" id="3862ed58-bb05-40ce-8d1f-1541e40f1022" name="Changes" comment="- Added 5 more classes. DatabaseFileReader: reads in the database file. DesktopPC: child class of the device parent class, and holds information specific to Desktop Pc's including memory size and SSD. Laptop: a child class of the DesktopPC parent class, and holds information specific to laptops including screen size. Tablet: a child class of the device parent class, and holds information specific to tablets including screen size. Device: This class is parent class. It is the parent class of Tablet, Desktop PC and Laptop, and it holds the information relevant to these three different types of computer including its category, type, ID, brand, CPU and price.">
+      <change afterPath="$PROJECT_DIR$/src/ComputerTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LoginDialogScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Users.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -34,12 +35,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -70,12 +71,20 @@
       <option name="project" value="LOCAL" />
       <updated>1683862033867</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="- Added 5 more classes. DatabaseFileReader: reads in the database file. DesktopPC: child class of the device parent class, and holds information specific to Desktop Pc's including memory size and SSD. Laptop: a child class of the DesktopPC parent class, and holds information specific to laptops including screen size. Tablet: a child class of the device parent class, and holds information specific to tablets including screen size. Device: This class is parent class. It is the parent class of Tablet, Desktop PC and Laptop, and it holds the information relevant to these three different types of computer including its category, type, ID, brand, CPU and price.">
+      <created>1683863356254</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683863356254</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created new project, Assignment 3 for 159234" />
     <MESSAGE value="Added the text file that I will need to use in my program." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the text file that I will need to use in my program." />
+    <MESSAGE value="- Added 5 more classes. DatabaseFileReader: reads in the database file. DesktopPC: child class of the device parent class, and holds information specific to Desktop Pc's including memory size and SSD. Laptop: a child class of the DesktopPC parent class, and holds information specific to laptops including screen size. Tablet: a child class of the device parent class, and holds information specific to tablets including screen size. Device: This class is parent class. It is the parent class of Tablet, Desktop PC and Laptop, and it holds the information relevant to these three different types of computer including its category, type, ID, brand, CPU and price." />
+    <option name="LAST_COMMIT_MESSAGE" value="- Added 5 more classes. DatabaseFileReader: reads in the database file. DesktopPC: child class of the device parent class, and holds information specific to Desktop Pc's including memory size and SSD. Laptop: a child class of the DesktopPC parent class, and holds information specific to laptops including screen size. Tablet: a child class of the device parent class, and holds information specific to tablets including screen size. Device: This class is parent class. It is the parent class of Tablet, Desktop PC and Laptop, and it holds the information relevant to these three different types of computer including its category, type, ID, brand, CPU and price." />
   </component>
 </project>
