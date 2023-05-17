@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3862ed58-bb05-40ce-8d1f-1541e40f1022" name="Changes" comment="- Added 5 more classes. DatabaseFileReader: reads in the database file. DesktopPC: child class of the device parent class, and holds information specific to Desktop Pc's including memory size and SSD. Laptop: a child class of the DesktopPC parent class, and holds information specific to laptops including screen size. Tablet: a child class of the device parent class, and holds information specific to tablets including screen size. Device: This class is parent class. It is the parent class of Tablet, Desktop PC and Laptop, and it holds the information relevant to these three different types of computer including its category, type, ID, brand, CPU and price.">
-      <change afterPath="$PROJECT_DIR$/src/ComputerTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LoginDialogScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Users.java" afterDir="false" />
+    <list default="true" id="3862ed58-bb05-40ce-8d1f-1541e40f1022" name="Changes" comment="- Added three more classes: Users, ComputerTable and LoginDialogScreen.">
+      <change afterPath="$PROJECT_DIR$/src/LoginScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LoginDialogScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginDialog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,13 +77,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683863356254</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="- Added three more classes: Users, ComputerTable and LoginDialogScreen.">
+      <created>1684105218295</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684105218295</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created new project, Assignment 3 for 159234" />
     <MESSAGE value="Added the text file that I will need to use in my program." />
     <MESSAGE value="- Added 5 more classes. DatabaseFileReader: reads in the database file. DesktopPC: child class of the device parent class, and holds information specific to Desktop Pc's including memory size and SSD. Laptop: a child class of the DesktopPC parent class, and holds information specific to laptops including screen size. Tablet: a child class of the device parent class, and holds information specific to tablets including screen size. Device: This class is parent class. It is the parent class of Tablet, Desktop PC and Laptop, and it holds the information relevant to these three different types of computer including its category, type, ID, brand, CPU and price." />
-    <option name="LAST_COMMIT_MESSAGE" value="- Added 5 more classes. DatabaseFileReader: reads in the database file. DesktopPC: child class of the device parent class, and holds information specific to Desktop Pc's including memory size and SSD. Laptop: a child class of the DesktopPC parent class, and holds information specific to laptops including screen size. Tablet: a child class of the device parent class, and holds information specific to tablets including screen size. Device: This class is parent class. It is the parent class of Tablet, Desktop PC and Laptop, and it holds the information relevant to these three different types of computer including its category, type, ID, brand, CPU and price." />
+    <MESSAGE value="- Added three more classes: Users, ComputerTable and LoginDialogScreen." />
+    <option name="LAST_COMMIT_MESSAGE" value="- Added three more classes: Users, ComputerTable and LoginDialogScreen." />
   </component>
 </project>

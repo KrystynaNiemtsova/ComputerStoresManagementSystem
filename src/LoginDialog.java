@@ -2,12 +2,12 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
 
-public class LoginDialogScreen extends JDialog {
+public class LoginDialog extends JDialog {
     private JTextField usernameField;
     private JPasswordField passwordField;
     private static Users currentUser;
     static ArrayList<Users> users = new ArrayList<>();
-    public LoginDialogScreen(JFrame mainWindow) {
+    public LoginDialog(JFrame mainWindow) {
         super(mainWindow, "Sales Person Login", true);
         JPanel panel = new JPanel(new GridLayout(3, 2));
         JLabel usernameLabel = new JLabel("Username:");
@@ -34,7 +34,7 @@ public class LoginDialogScreen extends JDialog {
 
                     break;
                 } else if (i == users.size() - 1) {
-                    JOptionPane.showMessageDialog(LoginDialogScreen.this,
+                    JOptionPane.showMessageDialog(LoginDialog.this,
                             "Invalid username or password",
                                "Login",
                                     JOptionPane.ERROR_MESSAGE);
@@ -66,6 +66,6 @@ public class LoginDialogScreen extends JDialog {
         return currentUser;
     }
     public void setCurrentUser(Users currentUser) {
-        LoginDialogScreen.currentUser = currentUser;
+        LoginDialog.currentUser = currentUser;
     }
 }
