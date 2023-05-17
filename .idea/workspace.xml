@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3862ed58-bb05-40ce-8d1f-1541e40f1022" name="Changes" comment="- Added three more classes: Users, ComputerTable and LoginDialogScreen.">
-      <change afterPath="$PROJECT_DIR$/src/LoginScreen.java" afterDir="false" />
+    <list default="true" id="3862ed58-bb05-40ce-8d1f-1541e40f1022" name="Changes" comment=" Implemented Laptop class, which extends the DesktopPC class. The Laptop class introduces an additional property, screenSize, which represents the size of the laptop's screen. It provides a constructor to initialize this property along with the inherited properties from the DesktopPC class. Additionally, it includes getter and setter methods for the screenSize property.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LoginDialogScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tablet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tablet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +82,56 @@
       <option name="project" value="LOCAL" />
       <updated>1684105218295</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="- Added TheComputerStore.png file for the image of the computer store logo. &#10;- Added LoginScreen class that takes care of the initial login screen.">
+      <created>1684282197755</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684282197755</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added ComputerTable class with JTabbedPane, ArrayLists, and JFrame.">
+      <created>1684302097993</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1684302097993</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Implement ComputerTableModel with device list and table functionality.">
+      <created>1684302179735</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1684302179735</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Read and populate device data from file in DatabaseFileReader.">
+      <created>1684302298777</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1684302298777</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Implemented DesktopPC class which extends the Device class. The DesktopPC class introduces additional properties such as memorySize and SSD (solid-state drive). It provides a constructor to initialize these properties along with the inherited properties from the Device class. Additionally, it includes getter and setter methods for memorySize and SSD.">
+      <created>1684302622725</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1684302622725</updated>
+    </task>
+    <task id="LOCAL-00011" summary=" Implemented Device class. The Device class contains properties such as category, type, ID, brand, CPU, and price. It provides a constructor to initialize these properties. Additionally, it includes setter and getter methods for each property, allowing access and modification of the device's attributes.">
+      <created>1684302707257</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1684302707257</updated>
+    </task>
+    <task id="LOCAL-00012" summary=" Implemented Laptop class, which extends the DesktopPC class. The Laptop class introduces an additional property, screenSize, which represents the size of the laptop's screen. It provides a constructor to initialize this property along with the inherited properties from the DesktopPC class. Additionally, it includes getter and setter methods for the screenSize property.">
+      <created>1684302760539</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1684302760539</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -92,6 +139,14 @@
     <MESSAGE value="Added the text file that I will need to use in my program." />
     <MESSAGE value="- Added 5 more classes. DatabaseFileReader: reads in the database file. DesktopPC: child class of the device parent class, and holds information specific to Desktop Pc's including memory size and SSD. Laptop: a child class of the DesktopPC parent class, and holds information specific to laptops including screen size. Tablet: a child class of the device parent class, and holds information specific to tablets including screen size. Device: This class is parent class. It is the parent class of Tablet, Desktop PC and Laptop, and it holds the information relevant to these three different types of computer including its category, type, ID, brand, CPU and price." />
     <MESSAGE value="- Added three more classes: Users, ComputerTable and LoginDialogScreen." />
-    <option name="LAST_COMMIT_MESSAGE" value="- Added three more classes: Users, ComputerTable and LoginDialogScreen." />
+    <MESSAGE value="- Added TheComputerStore.png file for the image of the computer store logo. &#10;- Added LoginScreen class that takes care of the initial login screen." />
+    <MESSAGE value="Added ComputerTable class with JTabbedPane, ArrayLists, and JFrame." />
+    <MESSAGE value="Implement ComputerTableModel with device list and table functionality." />
+    <MESSAGE value="Read and populate device data from file in DatabaseFileReader." />
+    <MESSAGE value="Implement DesktopPC class extending Device." />
+    <MESSAGE value="Implemented DesktopPC class which extends the Device class. The DesktopPC class introduces additional properties such as memorySize and SSD (solid-state drive). It provides a constructor to initialize these properties along with the inherited properties from the Device class. Additionally, it includes getter and setter methods for memorySize and SSD." />
+    <MESSAGE value=" Implemented Device class. The Device class contains properties such as category, type, ID, brand, CPU, and price. It provides a constructor to initialize these properties. Additionally, it includes setter and getter methods for each property, allowing access and modification of the device's attributes." />
+    <MESSAGE value=" Implemented Laptop class, which extends the DesktopPC class. The Laptop class introduces an additional property, screenSize, which represents the size of the laptop's screen. It provides a constructor to initialize this property along with the inherited properties from the DesktopPC class. Additionally, it includes getter and setter methods for the screenSize property." />
+    <option name="LAST_COMMIT_MESSAGE" value=" Implemented Laptop class, which extends the DesktopPC class. The Laptop class introduces an additional property, screenSize, which represents the size of the laptop's screen. It provides a constructor to initialize this property along with the inherited properties from the DesktopPC class. Additionally, it includes getter and setter methods for the screenSize property." />
   </component>
 </project>
