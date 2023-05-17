@@ -8,4 +8,6 @@ public class ComputerTable extends JFrame {
     private JPanel browseProducts = new JPanel();
     protected static JFrame frame;
     static ComputerTableModel computerTable;
+    private static JTable table;
+    UpdateProducts products;
 }
