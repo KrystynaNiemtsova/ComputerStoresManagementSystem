@@ -7,14 +7,14 @@ class LoginScreen extends JFrame {
     private JFrame loginWindow;
 
     LoginScreen() {
-        ImageIcon logo = new ImageIcon("TheComputerStore.png");
+        ImageIcon logo = new ImageIcon("pngegg.png");
         Image image = logo.getImage();
         Image scaledImage = image.getScaledInstance(400, 250, SCALE_SMOOTH);
         logo = new ImageIcon(scaledImage);
 
-        JButton loginButton = new JButton("Click to Login", logo);
+        JButton loginButton = new JButton("Click to login", logo);
         loginButton.setHorizontalTextPosition(SwingConstants.RIGHT);
-        loginButton.setFont(new Font("helvetica", Font.BOLD, 30));
+        loginButton.setFont(new Font("helvetica", Font.BOLD, 40));
         loginButton.setOpaque(true);
         loginButton.setBackground(new Color(178, 224, 247));
         loginButton.setBorder(BorderFactory.createLineBorder(new Color(178, 224, 247)));
