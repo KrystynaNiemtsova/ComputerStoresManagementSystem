@@ -46,7 +46,12 @@ public class ComputerTableModel extends AbstractTableModel {
         if (deviceList.size() > 0) {
             deviceList.remove(row);
             fireTableRowsDeleted(row, row);
-            DatabaseFileReader.setAllDevices(deviceList);
+            DatabaseFileReader.setAllItems(deviceList);
         }
+    }
+    public void addRow(Device itemToAdd) {
+        deviceList.add(itemToAdd);
+        fireTableDataChanged();
+        DatabaseFileReader.setAllItems(deviceList);
     }
 }
