@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3862ed58-bb05-40ce-8d1f-1541e40f1022" name="Changes" comment=" Implemented Laptop class, which extends the DesktopPC class. The Laptop class introduces an additional property, screenSize, which represents the size of the laptop's screen. It provides a constructor to initialize this property along with the inherited properties from the DesktopPC class. Additionally, it includes getter and setter methods for the screenSize property.">
+    <list default="true" id="3862ed58-bb05-40ce-8d1f-1541e40f1022" name="Changes" comment="Changed the logo image.">
+      <change afterPath="$PROJECT_DIR$/src/typeFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tablet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tablet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UpdateProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UpdateProducts.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +132,63 @@
       <option name="project" value="LOCAL" />
       <updated>1684302760539</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary=" Implemented Tablet class,  which extends the Device class. The Tablet class introduces an additional property, screenSize, which represents the size of the tablet's screen. It provides a constructor to initialize this property along with the inherited properties from the Device class. Additionally, it includes getter and setter methods for the screenSize property.">
+      <created>1684303156022</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1684303156022</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added UpdateProducts class that will take care of the update products tab.">
+      <created>1684303319237</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1684303319237</updated>
+    </task>
+    <task id="LOCAL-00015" summary="I added another image for my logo as the lecturer said we are encouraged to use another logo not like shown in the example.">
+      <created>1684475330649</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1684475330649</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Added categoryFilter class with category filtering functionality.">
+      <created>1684475407993</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1684475407993</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Refactor ComputerTable class with table setup and functionality.">
+      <created>1684475530713</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1684475530713</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Implemented addRow method to add a new device to the table and update the database.">
+      <created>1684475624449</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1684475624449</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Changed the name allDevices to allItems as allDevices is used for something else.">
+      <created>1684475665948</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1684475665948</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Changed the logo image.">
+      <created>1684475695151</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1684475695151</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -147,6 +204,14 @@
     <MESSAGE value="Implemented DesktopPC class which extends the Device class. The DesktopPC class introduces additional properties such as memorySize and SSD (solid-state drive). It provides a constructor to initialize these properties along with the inherited properties from the Device class. Additionally, it includes getter and setter methods for memorySize and SSD." />
     <MESSAGE value=" Implemented Device class. The Device class contains properties such as category, type, ID, brand, CPU, and price. It provides a constructor to initialize these properties. Additionally, it includes setter and getter methods for each property, allowing access and modification of the device's attributes." />
     <MESSAGE value=" Implemented Laptop class, which extends the DesktopPC class. The Laptop class introduces an additional property, screenSize, which represents the size of the laptop's screen. It provides a constructor to initialize this property along with the inherited properties from the DesktopPC class. Additionally, it includes getter and setter methods for the screenSize property." />
-    <option name="LAST_COMMIT_MESSAGE" value=" Implemented Laptop class, which extends the DesktopPC class. The Laptop class introduces an additional property, screenSize, which represents the size of the laptop's screen. It provides a constructor to initialize this property along with the inherited properties from the DesktopPC class. Additionally, it includes getter and setter methods for the screenSize property." />
+    <MESSAGE value=" Implemented Tablet class,  which extends the Device class. The Tablet class introduces an additional property, screenSize, which represents the size of the tablet's screen. It provides a constructor to initialize this property along with the inherited properties from the Device class. Additionally, it includes getter and setter methods for the screenSize property." />
+    <MESSAGE value="Added UpdateProducts class that will take care of the update products tab." />
+    <MESSAGE value="I added another image for my logo as the lecturer said we are encouraged to use another logo not like shown in the example." />
+    <MESSAGE value="Added categoryFilter class with category filtering functionality." />
+    <MESSAGE value="Refactor ComputerTable class with table setup and functionality." />
+    <MESSAGE value="Implemented addRow method to add a new device to the table and update the database." />
+    <MESSAGE value="Changed the name allDevices to allItems as allDevices is used for something else." />
+    <MESSAGE value="Changed the logo image." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed the logo image." />
   </component>
 </project>
