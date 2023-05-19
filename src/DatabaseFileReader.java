@@ -9,7 +9,7 @@ public class DatabaseFileReader {
     private static ArrayList<DesktopPC> desktopPC = new ArrayList<>();
     private static ArrayList<Laptop> laptop = new ArrayList<>();
     private static ArrayList<Tablet> tablet = new ArrayList<>();
-    private static ArrayList<Device> allDevices = new ArrayList<>();
+    private static ArrayList<Device> allItems = new ArrayList<>();
     public DatabaseFileReader(File infile) {
         try (Scanner scanner = new Scanner(new BufferedReader(new FileReader(infile)))) {
             while (scanner.hasNextLine()) {
@@ -46,9 +46,9 @@ public class DatabaseFileReader {
                     }
                 }
             }
-            allDevices.addAll(desktopPC);
-            allDevices.addAll(laptop);
-            allDevices.addAll(tablet);
+            allItems.addAll(desktopPC);
+            allItems.addAll(laptop);
+            allItems.addAll(tablet);
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -69,11 +69,11 @@ public class DatabaseFileReader {
     public static void setTablet(ArrayList<Tablet> tablet) {
         DatabaseFileReader.tablet = tablet;
     }
-    public static ArrayList<Device> getAllDevices() {
-        return allDevices;
+    public static ArrayList<Device> getAllItems() {
+        return allItems;
     }
-    public static void setAllDevices(ArrayList<Device> allDevices) {
-        DatabaseFileReader.allDevices = allDevices;
+    public static void setAllItems(ArrayList<Device> allItems) {
+        DatabaseFileReader.allItems = allItems;
     }
     public static void setLaptop(ArrayList<Laptop> laptop) {
         DatabaseFileReader.laptop = laptop;
