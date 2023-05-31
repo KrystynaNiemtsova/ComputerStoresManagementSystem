@@ -1,3 +1,8 @@
+/*
+    This is the computer table class, it creates a table from the ComputerTable Model class and
+    creates the browser Products screen
+ */
+
 import javax.swing.*;
 import javax.swing.table.TableRowSorter;
 import java.awt.*;
@@ -34,7 +39,7 @@ public class ComputerTable extends JFrame {
         tablePanel.add(table.getTableHeader(), BorderLayout.NORTH);
         tablePanel.add(scrollTable, BorderLayout.CENTER);
 
-        JPanel comboBoxes = new JPanel(new GridLayout(2, 2));
+        JPanel comboBoxes = new JPanel(new GridBagLayout());
 
         JComboBox<String> typeDropBox = new JComboBox<>();
         JComboBox<String> categoryDropBox = new JComboBox<>();
@@ -70,10 +75,12 @@ public class ComputerTable extends JFrame {
         products = new UpdateProducts(null);
         tabbedPane.setBackground(new Color(178, 224, 247));
 
+        // Disables Check/Update tab if the current user is not a manager
         if (!LoginDialog.getCurrentUser().getManager()) {
             tabbedPane.setEnabledAt(1, false);
         }
 
+        // Displays selected product information when a product is double-clicked
         table.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -91,10 +98,45 @@ public class ComputerTable extends JFrame {
         JLabel categoryDropBoxLabel = new JLabel("Computer Category");
         JLabel typeDropBoxLabel = new JLabel("Computer Type");
 
-        comboBoxes.add(categoryDropBoxLabel);
-        comboBoxes.add(categoryDropBox);
-        comboBoxes.add(typeDropBoxLabel);
-        comboBoxes.add(typeDropBox);
+        GridBagConstraints gbc = new GridBagConstraints();
+        gbc.anchor = GridBagConstraints.WEST;
+        gbc.insets = new Insets(5, 5, 5, 5);
+
+        gbc.gridx = 0;
+        gbc.gridy = 0;
+        gbc.weightx = 0;
+        gbc.fill = GridBagConstraints.NONE;
+        comboBoxes.add(categoryDropBoxLabel, gbc);
+
+        gbc.gridx = 1;
+        gbc.gridy = 0;
+        gbc.weightx = 0.5;
+        gbc.fill = GridBagConstraints.HORIZONTAL;
+        comboBoxes.add(categoryDropBox, gbc);
+
+        gbc.gridx = 2;
+        gbc.gridy = 0;
+        gbc.weightx = 0.5;
+        gbc.fill = GridBagConstraints.HORIZONTAL;
+        comboBoxes.add(new JPanel(), gbc); // Empty component to take up remaining space
+
+        gbc.gridx = 0;
+        gbc.gridy = 1;
+        gbc.weightx = 0;
+        gbc.fill = GridBagConstraints.NONE;
+        comboBoxes.add(typeDropBoxLabel, gbc);
+
+        gbc.gridx = 1;
+        gbc.gridy = 1;
+        gbc.weightx = 0.5;
+        gbc.fill = GridBagConstraints.HORIZONTAL;
+        comboBoxes.add(typeDropBox, gbc);
+
+        gbc.gridx = 2;
+        gbc.gridy = 1;
+        gbc.weightx = 0.5;
+        gbc.fill = GridBagConstraints.HORIZONTAL;
+        comboBoxes.add(new JPanel(), gbc);
 
         browseProducts.setLayout(new BorderLayout());
 
@@ -108,16 +150,18 @@ public class ComputerTable extends JFrame {
         frame.setResizable(false);
         frame.setVisible(true);
     }
+
+    // This function creates the logout button and returns to the login screen
     public static JButton LogoutButton(JFrame frame) {
         JButton logoutButton;
-        ImageIcon logo = new ImageIcon("pngegg.png");
+        ImageIcon logo = new ImageIcon("logo.png");
         Image image = logo.getImage();
         Image scaledImage = image.getScaledInstance(300, 175, SCALE_SMOOTH);
         logo = new ImageIcon(scaledImage);
 
-        logoutButton = new JButton("Click to logout", logo);
+        logoutButton = new JButton("Click to Log out", logo);
         logoutButton.setHorizontalTextPosition(SwingConstants.RIGHT);
-        logoutButton.setFont(new Font("helvetica", Font.BOLD, 30));
+        logoutButton.setFont(new Font("helvetica", Font.BOLD, 40));
         logoutButton.setOpaque(true);
         logoutButton.setBackground(new Color(178, 224, 247));
         logoutButton.setBorder(BorderFactory.createLineBorder(new Color(178, 224, 247)));
@@ -130,6 +174,8 @@ public class ComputerTable extends JFrame {
         });
         return logoutButton;
     }
+
+    // This functions sets the categories for the Category Combo Box
     private void setCategories(ArrayList<Device> allDevices, JComboBox<String> categoryDropBox) {
         categories = findCategories(allDevices);
         categoryDropBox.addItem("All");
@@ -138,6 +184,8 @@ public class ComputerTable extends JFrame {
         }
         categoryDropBox.setEditable(false);
     }
+
+    // This function sets the types for the Type Combo Box
     private void setTypes(ArrayList<Device> allDevices, JComboBox<String> typeDropBox, String selected) {
         types = findTypes(allDevices, selected);
         typeDropBox.removeAllItems();
@@ -146,6 +194,8 @@ public class ComputerTable extends JFrame {
             typeDropBox.addItem(type);
         }
     }
+
+    // This function finds all the different types of each Item
     public static ArrayList<String> findTypes(ArrayList<Device> allDevices, String selected) {
         ArrayList<String> types = new ArrayList<>();
         for (Device allDevice : allDevices) {
@@ -157,6 +207,8 @@ public class ComputerTable extends JFrame {
         }
         return types;
     }
+
+    // This function finds all the different categories of each Item
     public ArrayList<String> findCategories(ArrayList<Device> devices) {
         ArrayList<String> categories = new ArrayList<>();
         for (Device device : devices) {
