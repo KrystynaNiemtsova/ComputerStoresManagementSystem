@@ -1,3 +1,7 @@
+/*
+    This class reads in the database file.
+ */
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -10,42 +14,46 @@ public class DatabaseFileReader {
     private static ArrayList<Laptop> laptop = new ArrayList<>();
     private static ArrayList<Tablet> tablet = new ArrayList<>();
     private static ArrayList<Device> allItems = new ArrayList<>();
+
+    // Constructor to read the database file and populate the device lists
     public DatabaseFileReader(File infile) {
         try (Scanner scanner = new Scanner(new BufferedReader(new FileReader(infile)))) {
             while (scanner.hasNextLine()) {
+                // Read each line and parse the values using a delimiter (',')
                 Scanner lineScanner = new Scanner(scanner.nextLine());
-                while (lineScanner.hasNext()) {
-                    lineScanner.useDelimiter(",");
-                    String category = lineScanner.next();
-                    String type = lineScanner.next();
-                    String ID = lineScanner.next();
-                    String brand = lineScanner.next();
-                    String CPU = lineScanner.next();
+                lineScanner.useDelimiter(",");
 
-                    int memorySize;
-                    int SSD;
-                    float price;
-                    if (category.equals("Desktop PC")) {
-                        memorySize = lineScanner.nextInt();
-                        SSD = lineScanner.nextInt();
-                        price = lineScanner.nextFloat();
+                // Extract the information for each device category (Desktop PC, Laptop, Tablet)
+                String category = lineScanner.next();
+                String type = lineScanner.next();
+                String ID = lineScanner.next();
+                String brand = lineScanner.next();
+                String CPU = lineScanner.next();
+
+                // Process the information based on the category
+                switch (category) {
+                    case "Desktop PC" -> {
+                        int memorySize = lineScanner.nextInt();
+                        int SSD = lineScanner.nextInt();
+                        float price = lineScanner.nextFloat();
                         desktopPC.add(new DesktopPC(category, type, ID, brand, CPU, memorySize, SSD, price));
                     }
-                    float screenSize;
-                    if (category.equals("Laptop")) {
-                        memorySize = lineScanner.nextInt();
-                        SSD = lineScanner.nextInt();
-                        screenSize = lineScanner.nextFloat();
-                        price = lineScanner.nextFloat();
+                    case "Laptop" -> {
+                        int memorySize = lineScanner.nextInt();
+                        int SSD = lineScanner.nextInt();
+                        float screenSize = lineScanner.nextFloat();
+                        float price = lineScanner.nextFloat();
                         laptop.add(new Laptop(category, type, ID, brand, CPU, memorySize, SSD, screenSize, price));
                     }
-                    if (category.equals("Tablet")) {
-                        screenSize = lineScanner.nextFloat();
-                        price = lineScanner.nextFloat();
+                    case "Tablet" -> {
+                        float screenSize = lineScanner.nextFloat();
+                        float price = lineScanner.nextFloat();
                         tablet.add(new Tablet(category, type, ID, brand, CPU, screenSize, price));
                     }
                 }
             }
+
+            // Combine all devices from different categories into a single list
             allItems.addAll(desktopPC);
             allItems.addAll(laptop);
             allItems.addAll(tablet);
@@ -54,6 +62,8 @@ public class DatabaseFileReader {
             e.printStackTrace();
         }
     }
+
+    // Getters and setters for the device lists and all items list
     public static ArrayList<DesktopPC> getDesktopPC() {
         return desktopPC;
     }
@@ -62,6 +72,9 @@ public class DatabaseFileReader {
     }
     public static ArrayList<Laptop> getLaptop() {
         return laptop;
+    }
+    public static void setLaptop(ArrayList<Laptop> laptop) {
+        DatabaseFileReader.laptop = laptop;
     }
     public static ArrayList<Tablet> getTablet() {
         return tablet;
@@ -74,8 +87,5 @@ public class DatabaseFileReader {
     }
     public static void setAllItems(ArrayList<Device> allItems) {
         DatabaseFileReader.allItems = allItems;
-    }
-    public static void setLaptop(ArrayList<Laptop> laptop) {
-        DatabaseFileReader.laptop = laptop;
     }
 }
