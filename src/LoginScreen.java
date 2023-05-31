@@ -1,13 +1,18 @@
+/*
+    This class is the login screen class.
+    It takes care of the initial login screen.
+ */
+
 import javax.swing.*;
 import java.awt.*;
 
 import static java.awt.Image.SCALE_SMOOTH;
-
 class LoginScreen extends JFrame {
     private JFrame loginWindow;
 
+    // Constructor for the LoginScreen class
     LoginScreen() {
-        ImageIcon logo = new ImageIcon("pngegg.png");
+        ImageIcon logo = new ImageIcon("logo.png");
         Image image = logo.getImage();
         Image scaledImage = image.getScaledInstance(400, 250, SCALE_SMOOTH);
         logo = new ImageIcon(scaledImage);
@@ -19,6 +24,7 @@ class LoginScreen extends JFrame {
         loginButton.setBackground(new Color(178, 224, 247));
         loginButton.setBorder(BorderFactory.createLineBorder(new Color(178, 224, 247)));
 
+        // ActionListener for the login button
         loginButton.addActionListener(e -> {
             LoginDialog loginDialog = new LoginDialog(loginWindow);
             loginDialog.setVisible(true);
