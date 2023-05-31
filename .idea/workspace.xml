@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3862ed58-bb05-40ce-8d1f-1541e40f1022" name="Changes" comment="Changed the logo image.">
-      <change afterPath="$PROJECT_DIR$/src/typeFilter.java" afterDir="false" />
+    <list default="true" id="3862ed58-bb05-40ce-8d1f-1541e40f1022" name="Changes" comment="Implemented UpdateProducts class for managing product updates.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheComputerStore.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pngegg.png" beforeDir="false" afterPath="$PROJECT_DIR$/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ComputerTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ComputerTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ComputerTableModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ComputerTableModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Laptop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Laptop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LoginScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UpdateProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UpdateProducts.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +45,20 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Assignment3KrystynaNiemtsova159234" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -188,7 +208,21 @@
       <option name="project" value="LOCAL" />
       <updated>1684475695151</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Added typeFilter class with type and category filtering functionality.">
+      <created>1684475747474</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1684475747474</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Implemented UpdateProducts class for managing product updates.">
+      <created>1684475821239</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1684475821239</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -212,6 +246,19 @@
     <MESSAGE value="Implemented addRow method to add a new device to the table and update the database." />
     <MESSAGE value="Changed the name allDevices to allItems as allDevices is used for something else." />
     <MESSAGE value="Changed the logo image." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed the logo image." />
+    <MESSAGE value="Added typeFilter class with type and category filtering functionality." />
+    <MESSAGE value="Implemented UpdateProducts class for managing product updates." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented UpdateProducts class for managing product updates." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/UpdateProducts.java</url>
+          <line>277</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
