@@ -1,3 +1,9 @@
+/*
+    This is the login dialog screen.
+    It takes care of the sales person
+    login and validating their login credentials.
+ */
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
@@ -7,6 +13,8 @@ public class LoginDialog extends JDialog {
     private JPasswordField passwordField;
     private static Users currentUser;
     static ArrayList<Users> users = new ArrayList<>();
+
+    // Constructor for the LoginDialog class
     public LoginDialog(JFrame mainWindow) {
         super(mainWindow, "Sales Person Login", true);
         JPanel panel = new JPanel(new GridLayout(3, 2));
@@ -22,6 +30,7 @@ public class LoginDialog extends JDialog {
         panel.add(passwordLabel);
         panel.add(passwordField);
 
+        // ActionListener for the login button
         loginButton.addActionListener(e -> {
             int i;
             for (i = 0; i < users.size(); i++) {
@@ -31,7 +40,6 @@ public class LoginDialog extends JDialog {
                     dispose();
                     mainWindow.dispose();
                     new ComputerTable();
-
                     break;
                 } else if (i == users.size() - 1) {
                     JOptionPane.showMessageDialog(LoginDialog.this,
@@ -43,6 +51,8 @@ public class LoginDialog extends JDialog {
                 }
             }
         });
+
+        // ActionListener for the cancel button
         cancelButton.addActionListener(e -> dispose());
 
         panel.add(loginButton);
@@ -53,18 +63,28 @@ public class LoginDialog extends JDialog {
         setResizable(false);
         setLocationRelativeTo(mainWindow);
     }
+
+    // Method to set the users in the login dialog
     public static void setUsers(String userName, String password, String position) {
         users.add(new Users(userName, password, position));
     }
+
+    // Getter for the username
     public String getUsername() {
         return usernameField.getText().trim();
     }
+
+    // Getter for the password
     public String getPassword() {
         return new String(passwordField.getPassword());
     }
+
+    // Getter for the current user
     public static Users getCurrentUser() {
         return currentUser;
     }
+
+    // Setter for the current user
     public void setCurrentUser(Users currentUser) {
         LoginDialog.currentUser = currentUser;
     }
