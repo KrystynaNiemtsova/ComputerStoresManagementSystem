@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3862ed58-bb05-40ce-8d1f-1541e40f1022" name="Changes" comment="Implemented UpdateProducts class for managing product updates.">
+    <list default="true" id="3862ed58-bb05-40ce-8d1f-1541e40f1022" name="Changes" comment="Added comments to the typeFilter class.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TheComputerStore.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pngegg.png" beforeDir="false" afterPath="$PROJECT_DIR$/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ComputerTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ComputerTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ComputerTableModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ComputerTableModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Laptop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Laptop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LoginScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UpdateProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UpdateProducts.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -222,19 +215,94 @@
       <option name="project" value="LOCAL" />
       <updated>1684475821239</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Changes logo and added comments to the main class.">
+      <created>1685511325465</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1685511325465</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Added comments to the categoryFilter class.">
+      <created>1685515493191</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1685515493191</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Added comments to the ComputerTable class.">
+      <created>1685515910736</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1685515910736</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Added comments to the ComputerTableModel class.">
+      <created>1685516256826</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1685516256826</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Added comments to the DatabaseFileReader class.">
+      <created>1685518133520</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1685518133520</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Added comments to the DesktopPC class.">
+      <created>1685518821108</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1685518821108</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Added comments to the Device class.">
+      <created>1685519100069</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1685519100069</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Added comments to the Laptop class.">
+      <created>1685519269528</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1685519269528</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Added comments to the LoginDialog class.">
+      <created>1685519580634</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1685519580634</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Added comments to the LoginScreen class.">
+      <created>1685519750393</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1685519750393</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Added comments to the Tablet class.">
+      <created>1685519907535</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1685519907535</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Added comments to the typeFilter class.">
+      <created>1685520034572</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1685520034572</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created new project, Assignment 3 for 159234" />
-    <MESSAGE value="Added the text file that I will need to use in my program." />
-    <MESSAGE value="- Added 5 more classes. DatabaseFileReader: reads in the database file. DesktopPC: child class of the device parent class, and holds information specific to Desktop Pc's including memory size and SSD. Laptop: a child class of the DesktopPC parent class, and holds information specific to laptops including screen size. Tablet: a child class of the device parent class, and holds information specific to tablets including screen size. Device: This class is parent class. It is the parent class of Tablet, Desktop PC and Laptop, and it holds the information relevant to these three different types of computer including its category, type, ID, brand, CPU and price." />
-    <MESSAGE value="- Added three more classes: Users, ComputerTable and LoginDialogScreen." />
-    <MESSAGE value="- Added TheComputerStore.png file for the image of the computer store logo. &#10;- Added LoginScreen class that takes care of the initial login screen." />
-    <MESSAGE value="Added ComputerTable class with JTabbedPane, ArrayLists, and JFrame." />
-    <MESSAGE value="Implement ComputerTableModel with device list and table functionality." />
-    <MESSAGE value="Read and populate device data from file in DatabaseFileReader." />
-    <MESSAGE value="Implement DesktopPC class extending Device." />
     <MESSAGE value="Implemented DesktopPC class which extends the Device class. The DesktopPC class introduces additional properties such as memorySize and SSD (solid-state drive). It provides a constructor to initialize these properties along with the inherited properties from the Device class. Additionally, it includes getter and setter methods for memorySize and SSD." />
     <MESSAGE value=" Implemented Device class. The Device class contains properties such as category, type, ID, brand, CPU, and price. It provides a constructor to initialize these properties. Additionally, it includes setter and getter methods for each property, allowing access and modification of the device's attributes." />
     <MESSAGE value=" Implemented Laptop class, which extends the DesktopPC class. The Laptop class introduces an additional property, screenSize, which represents the size of the laptop's screen. It provides a constructor to initialize this property along with the inherited properties from the DesktopPC class. Additionally, it includes getter and setter methods for the screenSize property." />
@@ -248,7 +316,19 @@
     <MESSAGE value="Changed the logo image." />
     <MESSAGE value="Added typeFilter class with type and category filtering functionality." />
     <MESSAGE value="Implemented UpdateProducts class for managing product updates." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented UpdateProducts class for managing product updates." />
+    <MESSAGE value="Changes logo and added comments to the main class." />
+    <MESSAGE value="Added comments to the categoryFilter class." />
+    <MESSAGE value="Added comments to the ComputerTable class." />
+    <MESSAGE value="Added comments to the ComputerTableModel class." />
+    <MESSAGE value="Added comments to the DatabaseFileReader class." />
+    <MESSAGE value="Added comments to the DesktopPC class." />
+    <MESSAGE value="Added comments to the Device class." />
+    <MESSAGE value="Added comments to the Laptop class." />
+    <MESSAGE value="Added comments to the LoginDialog class." />
+    <MESSAGE value="Added comments to the LoginScreen class." />
+    <MESSAGE value="Added comments to the Tablet class." />
+    <MESSAGE value="Added comments to the typeFilter class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added comments to the typeFilter class." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
