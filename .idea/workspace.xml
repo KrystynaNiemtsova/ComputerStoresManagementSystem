@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3862ed58-bb05-40ce-8d1f-1541e40f1022" name="Changes" comment="Added comments to the typeFilter class.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UpdateProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UpdateProducts.java" afterDir="false" />
-    </list>
+    <list default="true" id="3862ed58-bb05-40ce-8d1f-1541e40f1022" name="Changes" comment="Added comments to the UpdateProducts class." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -299,11 +296,17 @@
       <option name="project" value="LOCAL" />
       <updated>1685520034572</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Added comments to the UpdateProducts class.">
+      <created>1685577490627</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1685577490627</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implemented DesktopPC class which extends the Device class. The DesktopPC class introduces additional properties such as memorySize and SSD (solid-state drive). It provides a constructor to initialize these properties along with the inherited properties from the Device class. Additionally, it includes getter and setter methods for memorySize and SSD." />
     <MESSAGE value=" Implemented Device class. The Device class contains properties such as category, type, ID, brand, CPU, and price. It provides a constructor to initialize these properties. Additionally, it includes setter and getter methods for each property, allowing access and modification of the device's attributes." />
     <MESSAGE value=" Implemented Laptop class, which extends the DesktopPC class. The Laptop class introduces an additional property, screenSize, which represents the size of the laptop's screen. It provides a constructor to initialize this property along with the inherited properties from the DesktopPC class. Additionally, it includes getter and setter methods for the screenSize property." />
     <MESSAGE value=" Implemented Tablet class,  which extends the Device class. The Tablet class introduces an additional property, screenSize, which represents the size of the tablet's screen. It provides a constructor to initialize this property along with the inherited properties from the Device class. Additionally, it includes getter and setter methods for the screenSize property." />
@@ -328,17 +331,7 @@
     <MESSAGE value="Added comments to the LoginScreen class." />
     <MESSAGE value="Added comments to the Tablet class." />
     <MESSAGE value="Added comments to the typeFilter class." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added comments to the typeFilter class." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/UpdateProducts.java</url>
-          <line>277</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Added comments to the UpdateProducts class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added comments to the UpdateProducts class." />
   </component>
 </project>
